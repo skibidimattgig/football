@@ -32,16 +32,16 @@ con3 = mouse.KeyDown:Connect(function(key)
 	con = game.RunService.RenderStepped:Connect(function()
 		local x = ball.Position.X
 		if x > limitsX[2] then
-			x = limitsX[2]
+			return
 		elseif x < limitsX[1] then
-			x = limitsX[1]
+			return
 		end
 		
 		local y = ball.Position.Y+2.4
 		if y > limitsY[2] then
-			y = limitsY[2]
+			return
 		elseif y < limitsY[1] then
-			y = limitsY[1]
+			return
 		end
 		
 		char.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(x, y, char.HumanoidRootPart.Position.Z))
