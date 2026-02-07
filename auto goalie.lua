@@ -37,7 +37,7 @@ con3 = mouse.KeyDown:Connect(function(key)
 			return
 		end
 		
-		local y = ball.Position.Y+2.4
+		local y = ball.Position.Y+2.45
 		if y > limitsY[2] then
 			return
 		elseif y < limitsY[1] then
