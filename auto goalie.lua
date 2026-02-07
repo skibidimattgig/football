@@ -31,15 +31,13 @@ con3 = mouse.KeyDown:Connect(function(key)
 	con = game.RunService.RenderStepped:Connect(function()
 		local x = ball.Position.X
 		if x > limitsX[2] then
-			return
+			x = limitsX[2]
 		elseif x < limitsX[1] then
-			return
+			x = limitsX[1]
 		end
 		
 		local y = ball.Position.Y+2.45
 		if y > limitsY[2] then
-			return
-		elseif y < limitsY[1] then
 			return
 		end
 		
