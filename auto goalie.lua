@@ -9,7 +9,6 @@ local con2
 con2 = mouse.KeyDown:Connect(function(key)
 	if key ~= "g" then return end
 
-	con2:Disconnect()
 	con:Disconnect()
 end)
 
